@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+:root {
+    --main: rgb(15, 72, 92);
+    --sub: #f4fffd;
+}
+
+body {
+    background-color: var(--sub);
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-container {
+    background-color: var(--main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20vh;
+    position: relative;
+}
+
+.nav-container h1 {
+    color: var(--sub);
+    position: relative;
+}
+
+.links {
+    margin-top: 2rem;
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: var(--sub);
+    padding: 16px 32px;
+    margin-left: 1vh;
+    border-radius: 3rem;
+    background-color: #000;
+    text-align: center;
+    margin-top: 10rem;
+    position: relative;
+    transition: 0.7s ease;
+}
+
+.nav-container a:hover {
+    background-color: #f4fffdae;
+    color: var(--main);
+    transform: scale(1.1);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 80vw;
+}
+
+.dog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+}
+
+.container img {
+    width: 30vw;
+    height: 40vh;
+    object-fit: cover;
+}
+
+
+.fusion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    margin: 2rem 0;
+
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2,
+p {
+    padding: 20px 0;
+}
+
+footer {
+    background-color: var(--main);
+    color: var(--sub);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    height: 110px;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        overflow: visible;
+        min-height: auto;
+    }
+
+    .nav-container {
+        font-size: 1rem;
+        text-align: center;
+        height: 33vh;
+
+    }
+
+    .dog img {
+        scale: 1;
+        width: 90vw;
+        height: 30vh;
+
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+
+    }
+
+
+    .fusion img {
+        scale: 1;
+        width: 90vw;
+        height: 30vh;
+
+    }
+}
